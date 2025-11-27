@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sean Benedict B. Manalo — Portfolio</title>
+    <link rel="stylesheet" href="PersonalPage_Design.css">
+</head>
+<body>
+
+<!-- Header Section -->
+<header class="site-header tech-header neon-nav">
+    <div class="container header-inner">
+        <a class="logo" href="#home">Sean Manalo</a>
+
+        <nav class="main-nav" id="main-nav">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" id="nav-toggle">☰</button>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="section hero tech-hero-bg">
+    <div class="container hero-flex">
+
+        <div class="hero-photo">
+            <img src="MyProfilePhoto.png" alt="Sean photo">
+        </div>
+
+        <div class="hero-text">
+            <h1>Hi, I’m <span class="accent">Sean Benedict</span>.</h1>
+            <p class="lead">
+                3rd Year BSIT student — fascinated by hardware & software, curious about how systems work.
+                Aspiring IT Technical Support • Cybersecurity Analyst • QA Tester.
+            </p>
+
+            <div class="hero-cta">
+                <a class="btn btn-primary" href="#projects">See Projects</a>
+                <a class="btn btn-ghost" href="mailto:seanbenedict0401@gmail.com">Email Me</a>
+                <a class="btn btn-ghost" href="Resume.html">Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section gradient-blue-pink fade-target">
+    <div class="container split">
+        <aside class="about-left">
+            <h2>About Me</h2>
+            <p>
+                I’m Sean Benedict Manalo, a 3rd Year college student currently taking a degree in Bachelor of Science in Information Technology.
+                The reason why I chose IT as my future career path is because of my interest in Computers in terms of Hardware and Software and 
+                it got me curious about how the Computer System works. I aspire to be an IT Technical Support, Cybersecurity Analyst, or Quality Assurance Tester.
+            </p>
+        </aside>
+
+        <div class="about-card tech-card glass-card">
+            <div class="about-meta">
+                <h3>Sean Benedict B. Manalo</h3>
+                <p>BSIT — San Sebastian College Recoletos de Cavite</p>
+                <p><strong>Contact:</strong> 09455170023<br>
+                <strong>Email:</strong> <a href="mailto:seanbenedict0401@gmail.com">seanbenedict0401@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="section gradient-soft-cyan fade-target">
+    <div class="container">
+        <h2 class="tech-title">Skills</h2>
+
+        <div class="grid-2 tech-card glass-card">
+            <div class="card">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Frontend Programming: C#, Java, Python</li>
+                    <li>Backend Programming: SSMS, MySQL</li>
+                    <li>Document Analysis and Engineering</li>
+                    <li>Google Docs, Canva, Excel</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Communicate confidently and convincingly in public</li>
+                    <li>Exercise good judgment in high-pressure situations</li>
+                    <li>Deliver structured and impactful presentations</li>
+                    <li>Assign responsibilities to enhance team productivity</li>
+                    <li>Collaborate effectively across departments and fields</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section gradient-purple fade-target">
+    <div class="container">
+        <h2 class="tech-title">Projects</h2>
+
+        <div class="projects-grid">
+
+            <article class="project-card tech-card glass-card">
+                <img src="Project1.png" onclick="openModal(this.src)">
+                <h4>Auto Information System</h4>
+                <p class="role">Role: Full-stack developer (UI + backend).</p>
+                <p>Full-stack development of UI and backend.</p>
+            </article>
+
+            <article class="project-card tech-card glass-card">
+                <img src="Project2.png" onclick="openModal(this.src)">
+                <h4>Toy Military Aircraft Store</h4>
+                <p class="role">Role: UI design + UI assistance.</p>
+                <p>Designed and assisted in UI development.</p>
+            </article>
+
+            <article class="project-card tech-card glass-card">
+                <img src="Project3.png" onclick="openModal(this.src)">
+                <h4>Comicborne</h4>
+                <p class="role">Role: Documentation writer.</p>
+                <p>Documentation and requirements writing.</p>
+            </article>
+
+            <article class="project-card tech-card glass-card">
+                <img src="Project4.png" onclick="openModal(this.src)">
+                <h4>Portfolio Website</h4>
+                <p class="role">Role: Developer.</p>
+                <p>Developing this personal portfolio site.</p>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section id="character" class="section fade-target">
+  <div class="container">
+    <h2>Character Canvas</h2>
+    <div class="canvas-card tech-card" style="display:flex; gap:40px; align-items:flex-start;">
+      <canvas id="billCanvas" width="800" height="800" aria-label="Bill Cipher drawing"></canvas>
+      <div class="character-info" style="max-width:400px; text-align:center; margin:0 auto;">
+        <h3 style="margin-top:0;">Bill Cipher</h3>
+        <p style="text-align:justify;">
+            Bill Cipher is a two-dimensional interdimensional dream demon from the now destroyed 
+            dimension, Euclydia. Formerly existent only in the Mindscape, Bill briefly succeeded in 
+            gaining access to the real world and a physical form. He had been running amok in 
+            Gravity Falls, Oregon since being summoned by Ford Pines over thirty years ago. Known for 
+            his mysterious demeanor and sadistic humor, Bill is the main antagonist of the overall series.
+         </p>
+     </div>
+    </div>
+  </div>
+</section>
+
+<!-- Certificates Section -->
+<section id="portfolio" class="section gradient-light-yellow fade-target">
+    <div class="container">
+        <h2 class="tech-title">Certificates</h2>
+        <div class="gallery">
+            <img src="Certificate1.png" onclick="openModal(this.src)">
+            <img src="Certificate2.png" onclick="openModal(this.src)">
+            <img src="Certificate3.png" onclick="openModal(this.src)">
+            <img src="Certificate4.png" onclick="openModal(this.src)">
+            <img src="Certificate5.png" onclick="openModal(this.src)">
+            <img src="Certificate6.png" onclick="openModal(this.src)">
+        </div>
+    </div>
+</section>
+
+<!-- Hobbies Section -->
+<section id="hobbies" class="section gradient-soft-green fade-target">
+    <div class="container">
+        <h2 class="tech-title">Hobbies & Interests</h2>
+        <div class="grid-3 gallery">
+    <div class="hobby-item">
+        <img src="Hobby1.png" onclick="openModal(this.src)">
+        <p style="text-align:center; margin-top:8px;">Gaming</p>
+    </div>
+
+    <div class="hobby-item">
+        <img src="Hobby2.png" onclick="openModal(this.src)">
+        <p style="text-align:center; margin-top:8px;">Watching Anime</p>
+    </div>
+
+    <div class="hobby-item">
+        <img src="Hobby3.png" onclick="openModal(this.src)">
+        <p style="text-align:center; margin-top:8px;">Car Enthusiast</p>
+    </div>
+</div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="section gradient-sunset fade-target">
+    <div class="contact-box tech-card glass-card">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or clarifications, please feel free to contact me!</p>
+        <p><strong>Email:</strong> <a href="mailto:seanbenedict0401@gmail.com">seanbenedict0401@gmail.com</a></p>
+        <p><strong>Phone:</strong> 09455170023</p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer tech-footer">
+    <div class="container">
+        <p>© 2025 Sean Benedict B. Manalo</p>
+    </div>
+</footer>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+    <img id="modal-img">
+</div>
+
+<script>
+function openModal(src) {
+    document.getElementById("modal-img").src = src;
+    document.getElementById("modal").classList.add("active");
+}
+function closeModal() {
+    document.getElementById("modal").classList.remove("active");
+}
+document.getElementById("nav-toggle").onclick = () => {
+    document.getElementById("main-nav").classList.toggle("open");
+};
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add("in-view");
+    });
+}, { threshold: 0.15 });
+
+document.querySelectorAll(".fade-target").forEach(el => {
+    el.classList.add("fade-init");
+    observer.observe(el);
+});
+
+// Canva Drawing Area
+(function () {
+  const canvas = document.getElementById('billCanvas');
+  const ctx = canvas.getContext('2d');
+
+  function resizeCanvas() {
+
+    const base = 800;
+    const container = canvas.parentElement;
+    const styleWidth = Math.min(container.clientWidth, 520); 
+    const ratio = window.devicePixelRatio || 1;
+
+    canvas.style.width = styleWidth + 'px';
+    canvas.style.height = styleWidth + 'px';
+
+    canvas.width = Math.round(styleWidth * ratio);
+    canvas.height = Math.round(styleWidth * ratio);
+
+    ctx.setTransform(ratio, 0, 0, ratio, 0, 0); 
+    drawBill(Math.min(styleWidth, base));
+  }
+  
+  // Draw Bill Cipher Character
+  function drawBill(size) {
+    
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    const s = size;
+    const cx = s / 2;
+    const cy = s / 2;
+
+    function px(v) { return (v / 800) * s; }
+
+    // background soft glow inside canvas-card (subtle)
+    ctx.save();
+    const gBg = ctx.createRadialGradient(cx, cy - px(40), px(30), cx, cy - px(40), px(360));
+    gBg.addColorStop(0, 'rgba(255, 255, 160, 0.35)');
+    gBg.addColorStop(1, 'rgba(255,255,200,0)');
+    ctx.fillStyle = gBg;
+    ctx.fillRect(0, 0, s, s);
+    ctx.restore();
+
+    // shadow under character
+    ctx.save();
+    ctx.translate(cx, cy + px(220));
+    ctx.scale(1, 0.35);
+    ctx.fillStyle = 'rgba(0,0,0,0.12)';
+    ctx.beginPath();
+    ctx.ellipse(0, 0, px(220), px(80), 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // triangle (main body) parameters
+    const triH = px(360);
+    const triW = px(420);
+    const triTopX = cx;
+    const triTopY = cy - px(120);
+
+    // draw triangle with gradient & outline
+    ctx.save();
+    ctx.beginPath();
+    ctx.moveTo(triTopX, triTopY);
+    ctx.lineTo(triTopX - triW / 2, triTopY + triH);
+    ctx.lineTo(triTopX + triW / 2, triTopY + triH);
+    ctx.closePath();
+
+    // fill gradient
+    const grad = ctx.createLinearGradient(triTopX, triTopY, triTopX, triTopY + triH);
+    grad.addColorStop(0, '#fff66a');
+    grad.addColorStop(0.5, '#ffd84a');
+    grad.addColorStop(1, '#f6c72a');
+    ctx.fillStyle = grad;
+    ctx.fill();
+
+    // inner glow
+    ctx.shadowColor = 'rgba(255,235,130,0.55)';
+    ctx.shadowBlur = px(28);
+    ctx.fill();
+
+    // embossed lighter bricks (subtle)
+    ctx.shadowBlur = 0;
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = 'rgba(255,255,255,0.35)';
+    const rows = 5;
+    for (let r = 0; r < rows; r++) {
+      const y = triTopY + (triH / rows) * (r + 0.6);
+      const leftX = triTopX - ((triW / 2) * (r + 1)) / rows;
+      const rightX = triTopX + ((triW / 2) * (r + 1)) / rows;
+      const bricks = 4;
+      for (let b = 0; b < bricks; b++) {
+        const bx = leftX + ((rightX - leftX) / bricks) * b + px(6);
+        const bw = (rightX - leftX) / bricks - px(12);
+        ctx.beginPath();
+        ctx.roundRect && ctx.roundRect(bx, y, bw, px(18), px(6));
+        if (!ctx.roundRect) { // fallback
+          ctx.moveTo(bx, y); ctx.lineTo(bx + bw, y); ctx.lineTo(bx + bw, y + px(18)); ctx.lineTo(bx, y + px(18)); ctx.closePath();
+        }
+        ctx.fillStyle = 'rgba(255,255,255,0.06)';
+        ctx.fill();
+        ctx.strokeStyle = 'rgba(255,255,255,0.06)';
+        ctx.stroke();
+      }
+    }
+
+    // thick outline
+    ctx.lineWidth = px(8);
+    ctx.strokeStyle = '#ffd86a';
+    ctx.stroke();
+
+    // darker outer stroke for contrast
+    ctx.lineWidth = px(6);
+    ctx.strokeStyle = 'rgba(0,0,0,0.22)';
+    ctx.stroke();
+    ctx.restore();
+
+    // single large eye (centered slightly above middle)
+    ctx.save();
+    const eyeCx = triTopX;
+    const eyeCy = triTopY + triH * 0.45;
+    const eyeW = px(150);
+    const eyeH = px(100);
+
+    // white eye base
+    ctx.beginPath();
+    ctx.ellipse(eyeCx, eyeCy, eyeW / 2, eyeH / 2, 0, 0, Math.PI * 2);
+    ctx.fillStyle = '#fff';
+    ctx.fill();
+   
+    // inner pupil (vertical slit)
+    ctx.beginPath();
+    ctx.fillStyle = '#000';
+    const pupilW = eyeW * 0.25;
+    const pupilH = eyeH * 0.9;
+    ctx.ellipse(eyeCx, eyeCy, pupilW / 2, pupilH / 2, 0, 0, Math.PI * 2);
+    ctx.fill();
+
+    // small reflective spec
+    ctx.beginPath();
+    ctx.fillStyle = 'rgba(255,255,255,0.6)';
+    ctx.arc(eyeCx - px(20), eyeCy - px(18), px(8), 0, Math.PI * 2);
+    ctx.fill();
+
+    // eye lashes (stylized)
+    ctx.lineWidth = px(4);
+    ctx.strokeStyle = '#000';
+    const lashCount = 7;
+    for (let i = 0; i < lashCount; i++) {
+      const a = -Math.PI / 3 + (i / (lashCount - 1)) * (Math.PI * 2 / 3);
+      const lx = eyeCx + Math.cos(a) * (eyeW / 2) * 0.9;
+      const ly = eyeCy + Math.sin(a) * (eyeH / 2) * 0.9;
+      ctx.beginPath();
+      ctx.moveTo(lx, ly);
+      ctx.lineTo(lx + Math.cos(a) * px(22), ly + Math.sin(a) * px(22));
+      ctx.stroke();
+    }
+    ctx.restore();
+
+    // bow tie (below eye)
+    ctx.save();
+    ctx.beginPath();
+    const bowY = triTopY + triH * 0.8;
+    ctx.fillStyle = '#0b0b0b';
+    ctx.moveTo(triTopX - px(36), bowY);
+    ctx.lineTo(triTopX - px(18), bowY - px(12));
+    ctx.lineTo(triTopX - px(8), bowY);
+    ctx.lineTo(triTopX - px(18), bowY + px(12));
+    ctx.closePath();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(triTopX + px(36), bowY);
+    ctx.lineTo(triTopX + px(18), bowY - px(12));
+    ctx.lineTo(triTopX + px(8), bowY);
+    ctx.lineTo(triTopX + px(18), bowY + px(12));
+    ctx.closePath();
+    ctx.fill();
+
+    // knot
+    ctx.beginPath();
+    ctx.ellipse(triTopX, bowY, px(8), px(6), 0, 0, Math.PI * 2);
+    ctx.fill();
+    ctx.restore();
+
+    // limbs: arms & legs — black strokes with yellow outer glow border
+    ctx.save();
+    ctx.lineCap = 'round';
+    ctx.lineJoin = 'round';
+
+    // left arm
+    ctx.lineWidth = px(14);
+    ctx.strokeStyle = '#0b0b0b';
+    ctx.beginPath();
+    ctx.moveTo(triTopX - px(80), triTopY + px(80));
+    ctx.lineTo(triTopX - px(260), triTopY + px(10));
+    ctx.stroke();
+
+    // right arm
+    ctx.beginPath();
+    ctx.moveTo(triTopX + px(80), triTopY + px(80));
+    ctx.lineTo(triTopX + px(290), triTopY + px(30));
+    ctx.stroke();
+
+    // left leg
+    ctx.beginPath();
+    ctx.moveTo(triTopX - px(60), triTopY + triH);
+    ctx.lineTo(triTopX - px(120), triTopY + triH + px(180));
+    ctx.stroke();
+
+    // right leg
+    ctx.beginPath();
+    ctx.moveTo(triTopX + px(60), triTopY + triH);
+    ctx.lineTo(triTopX + px(120), triTopY + triH + px(180));
+    ctx.stroke();
+
+    // stylized cane in left hand (thin)
+    ctx.save();
+    ctx.lineWidth = px(8);
+    ctx.strokeStyle = '#0b0b0b';
+    ctx.beginPath();
+    ctx.moveTo(triTopX - px(260), triTopY + px(10));
+    ctx.lineTo(triTopX - px(280), triTopY - px(80));
+    ctx.stroke();
+    
+    // cane top curve
+    ctx.beginPath();
+    ctx.arc(triTopX - px(268), triTopY - px(90), px(18), Math.PI * 0.15, Math.PI * 1.3);
+    ctx.stroke();
+    ctx.restore();
+
+    // subtle yellow outline on limbs (to mimic character's yellow-stroked limbs)
+    ctx.save();
+    ctx.lineWidth = px(14);
+    ctx.strokeStyle = 'rgba(255,235,120,0.8)';
+    ctx.beginPath();
+    ctx.moveTo(triTopX - px(80), triTopY + px(80));
+    ctx.lineTo(triTopX - px(260), triTopY + px(10));
+    ctx.moveTo(triTopX + px(80), triTopY + px(80));
+    ctx.lineTo(triTopX + px(290), triTopY + px(30));
+    ctx.moveTo(triTopX - px(60), triTopY + triH);
+    ctx.lineTo(triTopX - px(120), triTopY + triH + px(180));
+    ctx.moveTo(triTopX + px(60), triTopY + triH);
+    ctx.lineTo(triTopX + px(120), triTopY + triH + px(180));
+    ctx.stroke();
+    ctx.restore();
+
+    // hat (top hat)
+    ctx.save();
+    ctx.fillStyle = '#0b0b0b';
+    const hatW = px(160);
+    const hatH = px(110);
+    const hatX = triTopX - hatW / 2;
+    const hatY = triTopY - px(120);
+    
+    // hat brim
+    ctx.beginPath();
+    ctx.ellipse(triTopX, hatY + px(70), hatW * 0.78, px(12), 0, 0, Math.PI * 2);
+    ctx.fill();
+    
+    // hat body
+    ctx.fillRect(hatX + px(18), hatY + px(10), hatW - px(36), hatH - px(12));
+    ctx.restore();
+
+    // tiny details - thin outer glow
+    ctx.save();
+    ctx.globalCompositeOperation = 'lighter';
+    ctx.strokeStyle = 'rgba(255,235,120,0.25)';
+    ctx.lineWidth = px(18);
+    ctx.beginPath();
+    ctx.moveTo(triTopX - triW / 2 + px(20), triTopY + px(30));
+    ctx.lineTo(triTopX + triW / 2 - px(20), triTopY + px(30));
+    ctx.stroke();
+    ctx.restore();
+
+    // final small highlight on triangle edges
+    ctx.save();
+    ctx.lineWidth = px(2);
+    ctx.strokeStyle = 'rgba(255,255,255,0.15)';
+    ctx.beginPath();
+    ctx.moveTo(triTopX, triTopY + px(6));
+    ctx.lineTo(triTopX - triW / 2 + px(10), triTopY + triH - px(6));
+    ctx.moveTo(triTopX, triTopY + px(6));
+    ctx.lineTo(triTopX + triW / 2 - px(10), triTopY + triH - px(6));
+    ctx.stroke();
+    ctx.restore();
+  }
+
+  window.addEventListener('resize', resizeCanvas);
+  document.addEventListener('DOMContentLoaded', resizeCanvas);
+  if (document.readyState === 'complete' || document.readyState === 'interactive') {
+    resizeCanvas();
+  }
+})();
+</script>
+
+</body>
+</html>
