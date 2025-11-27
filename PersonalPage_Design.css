@@ -5,7 +5,6 @@ html,body{
     background:#ffffff;
 }
 
-/* Global Colors */
 :root{
     --lightblue:#d9ecff;
     --blue-accent:#66b8ff;
@@ -25,7 +24,6 @@ html,body{
     --shadow:rgba(0,0,0,0.1);
 }
 
-/* Universal Section Colors */
 .gradient-blue-pink{
     background:linear-gradient(180deg,#eaf4ff,#ffe6ed);
 }
@@ -45,18 +43,15 @@ html,body{
     background:linear-gradient(180deg,#ffe5e8,#ffffff);
 }
 
-/* Tech glass effect */
 .glass-card{
     backdrop-filter:blur(8px);
     background:rgba(255,255,255,0.7);
     border:1px solid rgba(255,255,255,0.4);
 }
 
-/* Container */
 .container{width:min(1100px,93%);margin:auto;}
 .section{padding:70px 0;}
 
-/* Section Titles */
 h2{
     font-size:1.7rem;margin-bottom:18px;color:var(--text);position:relative;
 }
@@ -70,7 +65,6 @@ h2::before{
     background:linear-gradient(180deg,var(--lightred),var(--lightblue));
 }
 
-/* Header */
 .site-header{
     position:sticky;top:0;z-index:20;
     background:rgba(255,255,255,0.88);
@@ -84,7 +78,6 @@ h2::before{
     font-weight:700;color:var(--text);text-decoration:none;font-size:1.25rem;
 }
 
-/* Neon Navbar Underline */
 .main-nav{
     margin-left:auto;display:flex;gap:25px;
 }
@@ -106,7 +99,6 @@ h2::before{
 }
 .nav-toggle{display:none;background:none;border:0;font-size:1.7rem;cursor:pointer;}
 
-/* Hero Section */
 .hero{
     background:linear-gradient(180deg,#eef6ff,#ffffff);
 }
@@ -137,7 +129,6 @@ h2::before{
     color:var(--muted);line-height:1.6;margin-bottom:25px;
 }
 
-/* Buttons */
 .btn{
     padding:14px 22px;border-radius:12px;text-decoration:none;
     font-weight:700;font-size:1rem;transition:0.25s;
@@ -156,7 +147,6 @@ h2::before{
     color:var(--text);
 }
 
-/* About Section */
 .split{display:flex;gap:30px;}
 .about-card{
     background:white;border-radius:12px;padding:22px;
@@ -166,14 +156,12 @@ h2::before{
     font-size:1.08rem;line-height:1.7;text-align:justify;color:#333;
 }
 
-/* Skills Section */
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:25px;}
 .card{
     background:white;padding:20px;border-radius:14px;
     box-shadow:0 10px 25px rgba(140,170,255,0.25);
 }
 
-/* Projects Section */
 .projects-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -196,7 +184,6 @@ h2::before{
     transform:scale(1.03);
 }
 
-/* Canvas Character Card */
 #character .canvas-card{
     max-width:560px;
     margin: 18px auto 40px;
@@ -229,7 +216,6 @@ h2::before{
 
 #character { padding-top: 40px; padding-bottom: 60px; }
 
-/* Gallery */
 .gallery{
     display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;
 }
@@ -240,7 +226,6 @@ h2::before{
 }
 .gallery img:hover{transform:scale(1.04);}
 
-/* Contact Section */
 #contact{text-align:center;}
 .contact-box{
     background:linear-gradient(180deg,#ffe9ee,#ffffff);
@@ -251,12 +236,10 @@ h2::before{
     margin:auto;
 }
 
-/* Footer */
 .site-footer{
     padding:30px 0;text-align:center;color:var(--muted);
 }
 
-/* Modal */
 .modal{
     display:none;position:fixed;inset:0;
     justify-content:center;align-items:center;
@@ -267,7 +250,6 @@ h2::before{
     width:90%;max-width:600px;border-radius:12px;
 }
 
-/* Fade Animation */
 .fade-init{
     opacity:0;transform:translateY(25px);
     transition:0.7s ease-out;
@@ -276,7 +258,6 @@ h2::before{
     opacity:1;transform:none;
 }
 
-/* Responsive Behavior */
 @media(max-width:900px){
     .hero-flex{flex-direction:column;text-align:center;}
     .split{flex-direction:column;}
@@ -290,3 +271,4 @@ h2::before{
     .main-nav.open{display:flex;}
     .nav-toggle{display:block;}
 }
+
