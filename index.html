@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- Header Section -->
 <header class="site-header tech-header neon-nav">
     <div class="container header-inner">
         <a class="logo" href="#home">Sean Manalo</a>
@@ -27,7 +26,6 @@
     </div>
 </header>
 
-<!-- Hero Section -->
 <section id="home" class="section hero tech-hero-bg">
     <div class="container hero-flex">
 
@@ -51,7 +49,6 @@
     </div>
 </section>
 
-<!-- About Section -->
 <section id="about" class="section gradient-blue-pink fade-target">
     <div class="container split">
         <aside class="about-left">
@@ -74,7 +71,6 @@
     </div>
 </section>
 
-<!-- Skills Section -->
 <section id="skills" class="section gradient-soft-cyan fade-target">
     <div class="container">
         <h2 class="tech-title">Skills</h2>
@@ -105,7 +101,6 @@
     </div>
 </section>
 
-<!-- Projects Section -->
 <section id="projects" class="section gradient-purple fade-target">
     <div class="container">
         <h2 class="tech-title">Projects</h2>
@@ -163,7 +158,6 @@
   </div>
 </section>
 
-<!-- Certificates Section -->
 <section id="portfolio" class="section gradient-light-yellow fade-target">
     <div class="container">
         <h2 class="tech-title">Certificates</h2>
@@ -178,7 +172,6 @@
     </div>
 </section>
 
-<!-- Hobbies Section -->
 <section id="hobbies" class="section gradient-soft-green fade-target">
     <div class="container">
         <h2 class="tech-title">Hobbies & Interests</h2>
@@ -201,7 +194,6 @@
     </div>
 </section>
 
-<!-- Contact Section -->
 <section id="contact" class="section gradient-sunset fade-target">
     <div class="contact-box tech-card glass-card">
         <h2>Contact Me</h2>
@@ -211,14 +203,12 @@
     </div>
 </section>
 
-<!-- Footer -->
 <footer class="site-footer tech-footer">
     <div class="container">
         <p>© 2025 Sean Benedict B. Manalo</p>
     </div>
 </footer>
 
-<!-- Modal -->
 <div id="modal" class="modal" onclick="closeModal()">
     <img id="modal-img">
 </div>
@@ -245,7 +235,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     observer.observe(el);
 });
 
-// Canva Drawing Area
 (function () {
   const canvas = document.getElementById('billCanvas');
   const ctx = canvas.getContext('2d');
@@ -267,7 +256,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     drawBill(Math.min(styleWidth, base));
   }
   
-  // Draw Bill Cipher Character
   function drawBill(size) {
     
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -278,7 +266,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
 
     function px(v) { return (v / 800) * s; }
 
-    // background soft glow inside canvas-card (subtle)
     ctx.save();
     const gBg = ctx.createRadialGradient(cx, cy - px(40), px(30), cx, cy - px(40), px(360));
     gBg.addColorStop(0, 'rgba(255, 255, 160, 0.35)');
@@ -287,7 +274,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.fillRect(0, 0, s, s);
     ctx.restore();
 
-    // shadow under character
     ctx.save();
     ctx.translate(cx, cy + px(220));
     ctx.scale(1, 0.35);
@@ -297,13 +283,11 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.fill();
     ctx.restore();
 
-    // triangle (main body) parameters
     const triH = px(360);
     const triW = px(420);
     const triTopX = cx;
     const triTopY = cy - px(120);
 
-    // draw triangle with gradient & outline
     ctx.save();
     ctx.beginPath();
     ctx.moveTo(triTopX, triTopY);
@@ -311,7 +295,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.lineTo(triTopX + triW / 2, triTopY + triH);
     ctx.closePath();
 
-    // fill gradient
     const grad = ctx.createLinearGradient(triTopX, triTopY, triTopX, triTopY + triH);
     grad.addColorStop(0, '#fff66a');
     grad.addColorStop(0.5, '#ffd84a');
@@ -319,12 +302,10 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.fillStyle = grad;
     ctx.fill();
 
-    // inner glow
     ctx.shadowColor = 'rgba(255,235,130,0.55)';
     ctx.shadowBlur = px(28);
     ctx.fill();
 
-    // embossed lighter bricks (subtle)
     ctx.shadowBlur = 0;
     ctx.lineWidth = 2;
     ctx.strokeStyle = 'rgba(255,255,255,0.35)';
@@ -349,31 +330,26 @@ document.querySelectorAll(".fade-target").forEach(el => {
       }
     }
 
-    // thick outline
     ctx.lineWidth = px(8);
     ctx.strokeStyle = '#ffd86a';
     ctx.stroke();
 
-    // darker outer stroke for contrast
     ctx.lineWidth = px(6);
     ctx.strokeStyle = 'rgba(0,0,0,0.22)';
     ctx.stroke();
     ctx.restore();
 
-    // single large eye (centered slightly above middle)
     ctx.save();
     const eyeCx = triTopX;
     const eyeCy = triTopY + triH * 0.45;
     const eyeW = px(150);
     const eyeH = px(100);
 
-    // white eye base
     ctx.beginPath();
     ctx.ellipse(eyeCx, eyeCy, eyeW / 2, eyeH / 2, 0, 0, Math.PI * 2);
     ctx.fillStyle = '#fff';
     ctx.fill();
    
-    // inner pupil (vertical slit)
     ctx.beginPath();
     ctx.fillStyle = '#000';
     const pupilW = eyeW * 0.25;
@@ -381,13 +357,11 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.ellipse(eyeCx, eyeCy, pupilW / 2, pupilH / 2, 0, 0, Math.PI * 2);
     ctx.fill();
 
-    // small reflective spec
     ctx.beginPath();
     ctx.fillStyle = 'rgba(255,255,255,0.6)';
     ctx.arc(eyeCx - px(20), eyeCy - px(18), px(8), 0, Math.PI * 2);
     ctx.fill();
 
-    // eye lashes (stylized)
     ctx.lineWidth = px(4);
     ctx.strokeStyle = '#000';
     const lashCount = 7;
@@ -402,7 +376,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     }
     ctx.restore();
 
-    // bow tie (below eye)
     ctx.save();
     ctx.beginPath();
     const bowY = triTopY + triH * 0.8;
@@ -422,18 +395,15 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.closePath();
     ctx.fill();
 
-    // knot
     ctx.beginPath();
     ctx.ellipse(triTopX, bowY, px(8), px(6), 0, 0, Math.PI * 2);
     ctx.fill();
     ctx.restore();
 
-    // limbs: arms & legs — black strokes with yellow outer glow border
     ctx.save();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
 
-    // left arm
     ctx.lineWidth = px(14);
     ctx.strokeStyle = '#0b0b0b';
     ctx.beginPath();
@@ -441,25 +411,21 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.lineTo(triTopX - px(260), triTopY + px(10));
     ctx.stroke();
 
-    // right arm
     ctx.beginPath();
     ctx.moveTo(triTopX + px(80), triTopY + px(80));
     ctx.lineTo(triTopX + px(290), triTopY + px(30));
     ctx.stroke();
 
-    // left leg
     ctx.beginPath();
     ctx.moveTo(triTopX - px(60), triTopY + triH);
     ctx.lineTo(triTopX - px(120), triTopY + triH + px(180));
     ctx.stroke();
 
-    // right leg
     ctx.beginPath();
     ctx.moveTo(triTopX + px(60), triTopY + triH);
     ctx.lineTo(triTopX + px(120), triTopY + triH + px(180));
     ctx.stroke();
 
-    // stylized cane in left hand (thin)
     ctx.save();
     ctx.lineWidth = px(8);
     ctx.strokeStyle = '#0b0b0b';
@@ -468,13 +434,11 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.lineTo(triTopX - px(280), triTopY - px(80));
     ctx.stroke();
     
-    // cane top curve
     ctx.beginPath();
     ctx.arc(triTopX - px(268), triTopY - px(90), px(18), Math.PI * 0.15, Math.PI * 1.3);
     ctx.stroke();
     ctx.restore();
 
-    // subtle yellow outline on limbs (to mimic character's yellow-stroked limbs)
     ctx.save();
     ctx.lineWidth = px(14);
     ctx.strokeStyle = 'rgba(255,235,120,0.8)';
@@ -490,7 +454,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.stroke();
     ctx.restore();
 
-    // hat (top hat)
     ctx.save();
     ctx.fillStyle = '#0b0b0b';
     const hatW = px(160);
@@ -498,16 +461,13 @@ document.querySelectorAll(".fade-target").forEach(el => {
     const hatX = triTopX - hatW / 2;
     const hatY = triTopY - px(120);
     
-    // hat brim
     ctx.beginPath();
     ctx.ellipse(triTopX, hatY + px(70), hatW * 0.78, px(12), 0, 0, Math.PI * 2);
     ctx.fill();
     
-    // hat body
     ctx.fillRect(hatX + px(18), hatY + px(10), hatW - px(36), hatH - px(12));
     ctx.restore();
 
-    // tiny details - thin outer glow
     ctx.save();
     ctx.globalCompositeOperation = 'lighter';
     ctx.strokeStyle = 'rgba(255,235,120,0.25)';
@@ -518,7 +478,6 @@ document.querySelectorAll(".fade-target").forEach(el => {
     ctx.stroke();
     ctx.restore();
 
-    // final small highlight on triangle edges
     ctx.save();
     ctx.lineWidth = px(2);
     ctx.strokeStyle = 'rgba(255,255,255,0.15)';
@@ -541,3 +500,4 @@ document.querySelectorAll(".fade-target").forEach(el => {
 
 </body>
 </html>
+
